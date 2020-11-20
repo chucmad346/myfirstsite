@@ -1,0 +1,375 @@
+
+  *{
+    margin: 0;
+    padding: 0;
+}
+#body{
+    background: #fdfde1;
+    font-family: sans-serif;
+    position: relative;
+}
+#header{
+    /*if you want to add the linear gradrient with image use the rgba*/
+    width: 100%;
+    border: 1px solid grey;
+    background-image: linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200)) /*,url("lighthouse.jpg")*/;
+    background-image: -webkit-linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200))/*,url("lighthouse.jpg")*/;
+    background-image: -ms-linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200));
+    /*background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;*/
+    overflow: hidden;
+    height: 150px;
+}
+#header h1{
+    padding-left: 100px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #000;
+}
+.sel{
+    position: absolute;
+    left: 970px;
+    top: 30px;
+    opacity: 0.5;
+}
+#header ul{
+    padding-left: 20px;
+    list-style-type: none;
+}
+#header li{
+    float: left;
+    width: 10%;
+    text-align: center;
+    margin-top: 90px;
+}
+#header a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid grey;
+    display: block;
+    border-radius: 5px;
+    margin-right: 10px;
+    background: #ccbbb1;
+    opacity: 0.5;
+    box-shadow: 5px 5px 3px black;
+}
+#header a:hover{
+    box-shadow: 3px 3px 2px black;
+    border: none;
+}
+#body canvas{
+    /*border: 1px solid black;*/
+    margin-left: 280px;
+    margin-top: 50px;
+}
+#menu{
+    /*border: 1px solid black;*/
+    margin-top: 20px;
+    margin-left: 5px;
+    width: 15%;
+    position: fixed;
+    top: 200px;
+    background: #f3f3f3;
+    height: 150px;
+}
+.container{
+    position: relative;
+    margin-left: 20%;
+    background: #f3f3f3;
+    /*border: 1px solid grey;*/
+    margin-top: 20px;
+    overflow: hidden;
+}#menu h2{
+    text-align: center;
+}
+#menu ul{
+    padding-left: 5px;
+    padding-right: 5px;
+    list-style: none;
+    text-align: center;
+}
+#menu li{
+    margin-bottom: 9px;
+}
+#menu a{
+    text-decoration: none;
+    color: #000;
+    display: block;
+    border: 1px solid grey;
+    background: #008080;
+    border-radius: 5px;
+    box-shadow: 4px 4px 3px grey;
+}
+#menu a:hover{
+    background: #c10000;
+    border:none;
+    color: #fff;
+    box-shadow: 2px 2px 1px grey; 
+}
+.main{
+    /*border: 1px solid grey;*/
+    margin-top: 20px;
+    /*background: #e0e0e0;*/
+    float: left;
+    width: 70%;
+    margin-left: 20px;
+    padding: 8px;
+}
+#sidebar{
+    float:left;
+    width: 20%;
+    /*border: 1px solid grey;*/
+    margin-left: 25px;
+    margin-top: 20px;
+    padding-left: 20px;
+    height: 400px;
+    background: #f0f0f0;
+}
+#float{
+    float: left;
+    clear: both;
+    /*border: 1px solid grey;*/
+    margin-top: 50px;
+    /*background: #118011;*/
+    height: 15em;
+    overflow: auto;
+}
+#vali{
+    float: left;
+    width: 97%;
+    clear: both;
+    /*border: 1px solid grey;*/
+    margin-top: 80px;
+    background: #f5f5f5;
+    overflow: hidden;
+    /*background-image: url("jellyfish.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+}
+#footer{
+    border: 1px solid grey;
+    /*float: left;*/
+    width: 100%;
+    /*clear: both*;*/
+    margin-top: 40px;
+    height: 80px;
+    background-image: linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200)) /*,url("lighthouse.jpg")*/;
+    background-image: -webkit-linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200))/*,url("lighthouse.jpg")*/;
+    background-image: -ms-linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200));
+}
+.gene{
+    /*border: 1px solid grey;*/
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #c2c3c2;
+    line-height: 1.5em;
+}
+.gene h2{
+    text-align: center;
+    /*border-bottom: 2px double grey;*/
+    text-transform: uppercase;
+    /*background-color: #800000;*/
+    color: #fff;
+    background-image: -webkit-linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200));
+    background-image: -ms-linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200));
+}
+.gene p{
+    text-align: center;
+    padding-top: 10px;
+}
+#sidebar ul{
+    list-style: none;
+    text-align: center;
+    /*margin-top: 10px;*/
+}
+#sidebar li{
+     margin-bottom: 5px;
+     margin-left: 10px;
+     width: 80%;
+}
+#sidebar li ul{
+    display: none;   
+}
+#sidebar li:hover>ul{
+    display: block;
+}
+#sidebar a{
+    text-decoration: none;
+    display: block;
+    border: 1px solid grey;
+    border-radius: 10px;
+    background: #008080;color: #000;
+    box-shadow: 4px 4px 3px grey;
+}
+.mov{
+    float: left;
+    width: 25%;
+    border-right: 1px solid grey;
+    padding: 5px;
+    background: #c2c3c2;
+    box-sizing: border-box;
+}
+#float h2{
+    text-align: center;
+    color: #fff;
+    background-image: -webkit-linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200));
+    background-image: -ms-linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200));
+}
+#float p{
+    text-align: center;
+    padding-top: 5px;
+}
+#check{
+    /*background: #ffff00;*/
+    border: 1px solid grey;
+}
+#check h3{
+    text-align: center;
+    color: #fff;
+    /*margin-top: 40px;*/
+    background-image: -webkit-linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200));
+    background-image: -ms-linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200));
+}
+#check input[type="checkbox"]{
+  float: left;
+  width: 5%;
+  clear: left;
+  margin-bottom: 5px;
+  margin-top: 12px;
+  margin-left: 5px;
+}
+#check label{
+    float: left;
+    /*width: 5%;*/
+    margin-top: 10px;
+    margin-left: 5px;
+    text-transform: capitalize;
+}
+#but{
+  float: left;
+  width: 30%;
+  clear: both;
+  margin-left: 40%;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 30px;
+  display: block;
+  background: #008080;
+  box-shadow: 5px 5px 4px black;
+}
+#but:hover{
+  border: none;
+  box-shadow: 3px 3px 2px grey;
+}
+#sketch:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.);
+  -ms-transform: scale(1.2);
+}
+.set{
+  float: left;
+  width: 25%;
+  margin-left: 20px;
+  /*margin-top: 20px;
+  margin-bottom: 20px;*/
+  background: #8080ff;
+  /*opacity: 0.85;*/
+}
+.form{
+  float: left;
+  width: 42%;
+  margin-left: 4%;
+  margin-top: 10%;
+  background: #8080ff;
+  /*opacity: 0.85;*/
+}
+.rad{
+  float: left;
+  width: 25%;
+  /*margin-left: 4%;
+  margin-top: 10%;
+  background: #808006*/
+}
+.form h3{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    /*margin-top: 40px;*/
+    background-image: -webkit-linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200));
+    background-image: -ms-linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200));
+}
+#form label{
+  float: left;
+  width: 25%;
+  clear: left;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  text-transform: capitalize;
+}
+#form input[type="text"]{
+  float: left;
+  width: 60%;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+#form input[type="password"]{
+  float: left;
+  width: 60%;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+#form input[type="date"]{
+  float: left;
+  width: 60%;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+#form input[type="email"]{
+  float: left;
+  width: 60%;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+#form input[type="number"]{
+  float: left;
+  width: 60%;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.wrk{
+  border: 1px solid grey;
+  float: left;
+  /*width: 25%;*/
+  height: 300px;
+  margin-left: 40px;
+   background: #8080ff;
+   text-transform: capitalize;
+}
+.wrk h3{
+  text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+    /*margin-top: 40px;*/
+    background-image: -webkit-linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200));
+    background-image: -ms-linear-gradient(left,rgb(200,100,50),rgb(50,200,100),rgb(100,50,200));
+}
+.wrk input[type="radio"]{
+  float: left;
+  width: 5%;
+  clear: left;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.wrk label{
+  float: left;
+  width: 60%;
+  margin-left: 5px;
+  margin-bottom: 5px;
+}
+#output{
+  background: #6a6acc;
+}
